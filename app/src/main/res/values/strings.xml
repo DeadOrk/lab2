@@ -1,3 +1,6 @@
 <resources>
     <string name="app_name">lab2</string>
+    <string name="titleTextView">Введите число n:</string>
+    <string name="editTextHint">Натуральное число</string>
+    <string name="calculateButton">Вычислить</string>
 </resources>

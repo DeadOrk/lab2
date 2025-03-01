@@ -9,26 +9,31 @@
 
     <TextView
         android:id="@+id/titleTextView"
-        android:layout_width="wrap_content"
+        android:layout_width="320dp"
         android:layout_height="wrap_content"
-        android:text="Введите число n:"
+        android:layout_marginStart="8dp"
+        android:layout_marginTop="24dp"
+        android:text="@string/titleTextView"
         android:textSize="18sp"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toTopOf="parent"/>
+        app:layout_constraintTop_toTopOf="parent" />
 
     <EditText
         android:id="@+id/nInput"
-        android:layout_width="match_parent"
-        android:layout_height="wrap_content"
-        android:inputType="number"
+        android:layout_width="320dp"
+        android:layout_height="48dp"
+        android:layout_marginStart="8dp"
+        android:layout_marginTop="8dp"
         android:digits="0123456789"
-        android:hint="Натуральное число"
-        app:layout_constraintTop_toBottomOf="@id/titleTextView"
-        android:layout_marginTop="8dp"/>
+        android:hint="@string/editTextHint"
+        android:inputType="number"
+        android:minHeight="48dp"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/titleTextView" />
 
     <ImageView
         android:id="@+id/formulaImage"
-        android:layout_width="384dp"
+        android:layout_width="320dp"
         android:layout_height="224dp"
         android:layout_marginTop="16dp"
         android:scaleType="fitCenter"
@@ -39,11 +44,13 @@
 
     <Button
         android:id="@+id/calculateButton"
-        android:layout_width="match_parent"
+        android:layout_width="320dp"
         android:layout_height="wrap_content"
-        android:text="Вычислить"
-        app:layout_constraintTop_toBottomOf="@id/formulaImage"
-        android:layout_marginTop="24dp"/>
+        android:layout_marginTop="24dp"
+        android:text="@string/calculateButton"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/formulaImage" />
 
     <TextView
         android:id="@+id/resultTextView"
